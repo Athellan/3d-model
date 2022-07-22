@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from "./Model";
+import Model from "./Model-with-animations";
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
       <ambientLight intensity={0.1} />
       <directionalLight intensity={0.4} />
       <Suspense fallback={null}>
-        <Model position={[0.025, -0.9, 0]} />
+        <Model position={[0.025, -0.9, 1]} />
       </Suspense>
       <OrbitControls />
     </Canvas>
